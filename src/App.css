@@ -59,7 +59,8 @@ body {
 }
 
 .list__item {
-  padding: 5px 1rem;
+  /* padding: 5px 1rem; */
+  width:100%;
   display: flex;
   flex-direction: row;
   gap: 1rem;
@@ -109,7 +110,9 @@ body {
 }
 .action_div {
   display: flex;
+  width:20%;
   gap: 1rem;
+
 }
 .btn_notshow {
   opacity: 0;
@@ -145,10 +148,22 @@ body {
   .container-lg {
     width: 80% !important;
   }
+  .input_div{
+    width:70%;
+  }
+  .action_div{
+    width: 23%;
+  }
 }
 @media only screen and (min-width: 475px) and (max-width: 599px) {
   .container-lg {
     width: 100% !important;
+  }
+  .input_div{
+    width:60%;
+  }
+  .action_div{
+    width: 25%;
   }
 }
 @media only screen and (min-width: 200px) and (max-width: 474px) {
@@ -185,6 +200,9 @@ body {
   }
   .action_div{
     margin-bottom: 0.4rem;
+    width:50%;
+    font-size:0.8rem;
+    /* background-color: #ff4141; */
   }
   .note{
     font-size:9px;

@@ -64,7 +64,7 @@ export default function Addnote() {
     setEdit(id);
 
   }
-  //  console.log(showDelete);
+   console.log(showDelete);
   return (
     <>
       <div className='container-lg p-3 mt-5'>
@@ -86,7 +86,7 @@ export default function Addnote() {
                  
                   <div className='action_div'>
                     <span className='sm_btn' onClick={() => handleEdit(index)}><BorderColorIcon></BorderColorIcon></span>
-                    <button className={showDelete.includes(ele) ? "btn_show" : "btn_notshow"} onClick={() => handleDelete(index)}>Delete</button>
+                   {showDelete.includes(ele) && <button   onClick={() => handleDelete(index)}>Delete</button>}
                   </div>
 
 
